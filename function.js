@@ -69,6 +69,12 @@ function buscaCep() {
             if (xhr.status = 200) {
                 json = JSON.parse(xhr.responseText);
                 if(!Boolean(json.erro)) {
+
+                    if(document.getElementsByClassName('form-input-endereco').length>0) {
+                        cepField = document.getElementsByClassName('form-input-endereco')[0];
+                        cepField.classList.remove('form-input-endereco');
+                        cepField.classList.add('form-input-endereco-active');
+                    }
                     document.getElementById("ENDERECO").value = json.logradouro;
                     document.getElementById("BAIRRO").value = json.bairro;
                     document.getElementById("CIDADE").value = json.localidade;

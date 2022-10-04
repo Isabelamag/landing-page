@@ -271,327 +271,13 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  /* HD */
-  @media only screen and (min-device-width: 1200px) and (max-width: 1800px) {
-    .dobra-um {
-      min-width: 1200px;
-      min-height: 720px;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-image: url(img/1080/bg-dobra1-min.png);
-      position: relative;
-    }
 
-    div.section-card {
-      height: 300px;
-      position: absolute;
-      left: 100px;
-      top: 105px;
-      background-image: url(img/1080/bg-dobra1-card1-min.png);
-      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
-      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
-    }
-
-    div.section-card:before,
-    div.section-card:after {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-      -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-      top: 50%;
-      bottom: 0;
-      left: 10px;
-      right: 10px;
-      -moz-border-radius: 100px / 10px;
-      border-radius: 100px / 10px;
-    }
-    div.section-card:after {
-      right: 10px;
-      left: auto;
-      -webkit-transform: skew(8deg) rotate(3deg);
-      -moz-transform: skew(8deg) rotate(3deg);
-      -ms-transform: skew(8deg) rotate(3deg);
-      -o-transform: skew(8deg) rotate(3deg);
-      transform: skew(8deg) rotate(3deg);
-    }
-
-    .grid-logos {
-      width: 496px;
-      height: 160px;
-      overflow: hidden;
-    }
-
-    .column-grid-logos {
-      width: 248px;
-      height: 160px;
-      float: left;
-      margin: 0 auto;
-      text-align: center;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      overflow: hidden;
-    }
-
-    #logo-facrisa {
-      width: 150px;
-      height: 64px;
-      overflow: hidden;
-      background-image: url(img/logos/logo-facrisa.svg);
-      position: relative;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    }
-
-    #logo-bella-agner {
-      width: 150px;
-      height: 78px;
-      overflow: hidden;
-      background-image: url(img/logos/logo-bella-agner.svg);
-      position: relative;
-      background-repeat: no-repeat;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    }
-
-    div.section-card h1 {
-      font-size: 28px;
-      font-family: 'Montserrat', sans-serif;
-      text-align: center;
-      font-weight: 500;
-    }
-
-    div.section-card h2 {
-      font-size: 28px;
-      font-family: 'Montserrat', sans-serif;
-      text-align: center;
-      font-weight: 800;
-      letter-spacing: 3px;
-    }
-
-    #anel-flutuante {
-      width: 99px;
-      height: 90px;
-      overflow: hidden;
-      background-image: url(img/720/anel-flutuante-min.png);
-      position: absolute;
-      bottom: 0px;
-      right: 90px;
-      background-repeat: no-repeat;
-    }
-
-    #brincos-flutuante {
-      width: 225px;
-      height: 155px;
-      overflow: hidden;
-      background-image: url(img/720/brincos-flutuante-min.png);
-      position: absolute;
-      top: 340px;
-      left: 17px;
-      background-repeat: no-repeat;
-    }
-
-    #colar-flutuante {
-      width: 123px;
-      height: 700px;
-      overflow: hidden;
-      background-image: url(img/720/colar-flutuante-min.png);
-      position: absolute;
-      right: 627px;
-      background-repeat: no-repeat;
-    }
-
-    div.section-info {
-      width: 551px;
-      height: 180px;
-      overflow: hidden;
-      position: absolute;
-      left: 25px;
-      bottom: 46px;
-      background-image: url(img/720/bg-info-min.png);
-      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
-      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-        0 0 40px rgba(0, 0, 0, 0.1) inset;
-    }
-
-    div.section-info:before,
-    div.section-info:after {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-      -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-      top: 50%;
-      bottom: 0;
-      left: 10px;
-      right: 10px;
-      -moz-border-radius: 100px / 10px;
-      border-radius: 100px / 10px;
-    }
-    div.section-info:after {
-      right: 10px;
-      left: auto;
-      -webkit-transform: skew(8deg) rotate(3deg);
-      -moz-transform: skew(8deg) rotate(3deg);
-      -ms-transform: skew(8deg) rotate(3deg);
-      -o-transform: skew(8deg) rotate(3deg);
-      transform: skew(8deg) rotate(3deg);
-    }
-
-    div.section-info .textos {
-      position: absolute;
-      left: 55%;
-      top: 55%;
-      transform: translate(-50%, -55%);
-      width: 350px;
-      overflow: hidden;
-    }
-
-    .texto-legenda,
-    .texto-legenda-negrito {
-      font-size: 18px;
-      overflow: hidden;
-      text-align: center;
-    }
-
-    .texto-sublegenda {
-      font-size: 16px;
-      margin-top: 25px;
-      text-align: center;
-    }
-
-    .div-form {
-      position: absolute;
-      right: 12%;
-      top: 0px;
-      background-color: rgba(0, 0, 0, 0.3);
-      width: 400px;
-      padding: 25px 25px 0 25px;
-    }
-
-    .div-form h3 {
-      font-size: 24px;
-      font-family: 'Montserrat', sans-serif;
-      text-align: center;
-      color: #fff;
-    }
-
-    .div-form input {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .div-form input[type='text'],
-    .div-form input[type='password'] {
-      border: none;
-      border-bottom: 1px solid #fff;
-      background: transparent;
-      outline: none;
-      height: 25px;
-      color: #fff;
-    }
-
-    .div-form input,
-    .div-form select,
-    .div-form select option {
-      font-size: 14px;
-    }
-
-    .div-form input[type='submit'] {
-      border: none;
-      outline: none;
-      height: 40px;
-      color: #fff;
-      font-size: 16px;
-      background: #df8a1b;
-      cursor: pointer;
-      border-radius: 20px;
-      margin-top: 8px;
-    }
-
-    .dobra-dois {
-      margin: auto;
-      width: 90%;
-    }
-
-    .dobra-dois h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 26px;
-      margin: 45px 0 35px 0;
-    }
-
-    .dobra-dois .imagens-dobra-dois {
-      width: 500px;
-      float: left;
-      margin: 25px;
-    }
-
-    .imagens-dobra-dois {
-      min-width: 500px;
-      min-height: 530px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .dobra-dois .imagens-dobra-dois .dobra-dois-imagem1 {
-      position: absolute;
-      left: 55px;
-      background-image: url(img/720/bg-dobra2-imagem1-min.png);
-      width: 266px;
-      height: 400px;
-    }
-    .dobra-dois .imagens-dobra-dois .dobra-dois-imagem2 {
-      position: absolute;
-      left: 340px;
-      top: 35px;
-      background-image: url(img/720/bg-dobra2-imagem2-min.png);
-      width: 200px;
-      height: 200px;
-    }
-    .dobra-dois .imagens-dobra-dois .dobra-dois-imagem3 {
-      position: absolute;
-      left: 280px;
-      top: 255px;
-      background-image: url(img/720/bg-dobra2-imagem3-min.png);
-      width: 288px;
-      height: 230px;
-    }
-
-    .lista-dobra-dois {
-      margin: 60px 0 0 40px;
-    }
-
-    .lista-dobra-dois li {
-      font-size: 34px;
-    }
-    .lista-dobra-dois li span {
-      font-size: 26px;
-    }
-
-    .lista-dobra-dois li {
-      line-height: 55px;
-    }
+  .div-form input {
+    width: 100%;
+    margin-bottom: 20px;
   }
+
+  .div-form input[type='text'],
   .div-form input[type='password'] {
     border: none;
     border-bottom: 1px solid #fff;
@@ -631,13 +317,13 @@
   }
 
   .dobra-dois .imagens-dobra-dois {
-    width: 550px;
+    width: 500px;
     float: left;
-    margin: 25px 0 0 0;
+    margin: 25px;
   }
 
   .imagens-dobra-dois {
-    min-width: 550px;
+    min-width: 500px;
     min-height: 530px;
     overflow: hidden;
     position: relative;
@@ -813,7 +499,7 @@
     width: 225px;
     height: 155px;
     overflow: hidden;
-    background-image: url(img/1080/brincos-flutuante-min.png);
+    background-image: url(img/720/brincos-flutuante-min.png);
     position: absolute;
     top: 340px;
     left: 17px;
@@ -892,6 +578,12 @@
     text-align: center;
   }
 
+  .form-input-field {
+    height: 48px;
+    width: 100%;
+    overflow: hidden;
+  }
+
   .div-form {
     position: absolute;
     right: 12%;
@@ -921,6 +613,12 @@
     outline: none;
     height: 25px;
     color: #fff;
+  }
+
+  .form-input-field {
+    height: 46px;
+    width: 100%;
+    overflow: hidden;
   }
 
   .div-form input,
@@ -1210,6 +908,12 @@
     outline: none;
     height: 30px;
     color: #fff;
+  }
+
+  .form-input-field {
+    height: 55px;
+    width: 100%;
+    overflow: hidden;
   }
 
   .div-form input,
