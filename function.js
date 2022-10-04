@@ -61,7 +61,7 @@ function showSnack(message, background) {
 function buscaCep() {
     cep_val = document.getElementById("CEP").value;
     let cep_field = cep_val.replace('-', '');
-    let url = 'http://viacep.com.br/ws/' + cep_field + '/json';
+    let url = 'https://viacep.com.br/ws/' + cep_field + '/json';
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
     xhr.onreadystatechange = function () {
