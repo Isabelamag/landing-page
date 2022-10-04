@@ -287,6 +287,12 @@
     color: #fff;
   }
 
+  .form-input-field {
+    height: 46px;
+    width: 100%;
+    overflow: hidden;
+  }
+
   .div-form input,
   .div-form select,
   .div-form select option {
@@ -576,12 +582,6 @@
     font-size: 16px;
     margin-top: 25px;
     text-align: center;
-  }
-
-  .form-input-field {
-    height: 48px;
-    width: 100%;
-    overflow: hidden;
   }
 
   .div-form {
