@@ -52,6 +52,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-image: url(img/1080/bg-dobra1-min.png);
+    background-repeat: no-repeat;
     position: relative;
   }
 
@@ -61,6 +62,7 @@
     left: 100px;
     top: 105px;
     background-image: url(img/1080/bg-dobra1-card1-min.png);
+    background-repeat: no-repeat;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
@@ -124,6 +126,7 @@
     height: 64px;
     overflow: hidden;
     background-image: url(img/logos/logo-facrisa.svg);
+    background-repeat: no-repeat;
     position: relative;
     background-repeat: no-repeat;
     background-size: contain;
@@ -135,6 +138,7 @@
     height: 78px;
     overflow: hidden;
     background-image: url(img/logos/logo-bella-agner.svg);
+    background-repeat: no-repeat;
     position: relative;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
@@ -162,6 +166,7 @@
     height: 90px;
     overflow: hidden;
     background-image: url(img/720/anel-flutuante-min.png);
+    background-repeat: no-repeat;
     position: absolute;
     bottom: 0px;
     right: 90px;
@@ -173,6 +178,7 @@
     height: 155px;
     overflow: hidden;
     background-image: url(img/720/brincos-flutuante-min.png);
+    background-repeat: no-repeat;
     position: absolute;
     top: 340px;
     left: 17px;
@@ -184,6 +190,7 @@
     height: 700px;
     overflow: hidden;
     background-image: url(img/720/colar-flutuante-min.png);
+    background-repeat: no-repeat;
     position: absolute;
     right: 570px;
     background-repeat: no-repeat;
@@ -197,6 +204,7 @@
     left: 25px;
     bottom: 46px;
     background-image: url(img/720/bg-info-min.png);
+    background-repeat: no-repeat;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
@@ -267,16 +275,6 @@
     color: #fff;
   }
 
-  .div-form input {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .div-form input {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
   .div-form input[type='text'],
   .div-form input[type='password'] {
     border: none;
@@ -339,6 +337,7 @@
     position: absolute;
     left: 55px;
     background-image: url(img/720/bg-dobra2-imagem1-min.png);
+    background-repeat: no-repeat;
     width: 266px;
     height: 400px;
   }
@@ -347,6 +346,7 @@
     left: 340px;
     top: 35px;
     background-image: url(img/720/bg-dobra2-imagem2-min.png);
+    background-repeat: no-repeat;
     width: 200px;
     height: 200px;
   }
@@ -355,6 +355,7 @@
     left: 280px;
     top: 255px;
     background-image: url(img/720/bg-dobra2-imagem3-min.png);
+    background-repeat: no-repeat;
     width: 288px;
     height: 230px;
   }
@@ -384,6 +385,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-image: url(img/1080/bg-dobra1-min.png);
+    background-repeat: no-repeat;
     position: relative;
   }
 
@@ -394,6 +396,7 @@
     left: 100px;
     top: 55px;
     background-image: url(img/1080/bg-dobra1-card1-min.png);
+    background-repeat: no-repeat;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
@@ -470,7 +473,6 @@
     background-image: url(img/logos/logo-bella-agner.svg);
     position: relative;
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
@@ -530,6 +532,7 @@
     left: 25px;
     bottom: 46px;
     background-image: url(img/720/bg-info-min.png);
+    background-repeat: no-repeat;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
@@ -600,7 +603,9 @@
     color: #fff;
   }
 
-  .div-form input {
+  .div-form input[type='text'],
+  .div-form input[type='button'],
+  .div-form input[type='submit'] {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -667,6 +672,7 @@
     position: absolute;
     left: 55px;
     background-image: url(img/720/bg-dobra2-imagem1-min.png);
+    background-repeat: no-repeat;
     width: 266px;
     height: 400px;
   }
@@ -675,6 +681,7 @@
     left: 340px;
     top: 35px;
     background-image: url(img/720/bg-dobra2-imagem2-min.png);
+    background-repeat: no-repeat;
     width: 200px;
     height: 200px;
   }
@@ -683,6 +690,7 @@
     left: 280px;
     top: 255px;
     background-image: url(img/720/bg-dobra2-imagem3-min.png);
+    background-repeat: no-repeat;
     width: 288px;
     height: 230px;
   }
@@ -726,6 +734,7 @@
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    background-repeat: no-repeat;
   }
 
   div.section-card:before,
@@ -796,7 +805,6 @@
     background-image: url(img/logos/logo-bella-agner.svg);
     position: relative;
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
@@ -830,6 +838,7 @@
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    background-repeat: no-repeat;
   }
 
   div.section-info:before,
@@ -895,7 +904,9 @@
     color: #fff;
   }
 
-  .div-form input {
+  .div-form input[type='text'],
+  .div-form input[type='button'],
+  .div-form input[type='submit'] {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -939,6 +950,7 @@
     height: 189px;
     overflow: hidden;
     background-image: url(img/1080/anel-flutuante-min.png);
+    background-repeat: no-repeat;
     position: absolute;
     bottom: 20px;
     right: 57px;
@@ -949,6 +961,7 @@
     height: 292px;
     overflow: hidden;
     background-image: url(img/1080/brincos-flutuante-min.png);
+    background-repeat: no-repeat;
     position: absolute;
     bottom: 300px;
     left: 57px;
@@ -960,6 +973,7 @@
     height: 1060px;
     overflow: hidden;
     background-image: url(img/1080/colar-flutuante-min.png);
+    background-repeat: no-repeat;
     position: absolute;
     top: -80px;
     right: 727px;
@@ -994,6 +1008,7 @@
     position: absolute;
     left: 55px;
     background-image: url(img/1080/bg-dobra2-imagem1-min.png);
+    background-repeat: no-repeat;
     width: 445px;
     height: 668px;
   }
@@ -1002,6 +1017,7 @@
     left: 530px;
     top: 45px;
     background-image: url(img/1080/bg-dobra2-imagem2-min.png);
+    background-repeat: no-repeat;
     width: 337px;
     height: 337px;
   }
@@ -1010,6 +1026,7 @@
     left: 450px;
     top: 415px;
     background-image: url(img/1080/bg-dobra2-imagem3-min.png);
+    background-repeat: no-repeat;
     width: 486px;
     height: 388px;
   }

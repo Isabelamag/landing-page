@@ -54,8 +54,11 @@ div.section-card h2 {
   color: #fff;
 }
 
-.div-form input {
+.div-form input[type='text'],
+.div-form input[type='button'],
+.div-form input[type='submit'] {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .div-form input::placeholder {
@@ -280,4 +283,17 @@ select[multiple] {
   display: block;
   -webkit-animation: fade-in 1.5s;
   animation: fade-in 1.5s;
+}
+
+.LGPD-checkbox {
+  float: left;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.form-input-LGPD {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 13px;
 }
