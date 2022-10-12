@@ -218,71 +218,75 @@
   }
 
   .dobra-dois {
-    margin: auto;
-    width: 90%;
+    width: 100%;
   }
 
   .dobra-dois h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
+    font-size: 1.8em;
     margin: 45px 0 35px 0;
   }
 
   .dobra-dois .imagens-dobra-dois {
-    width: 500px;
-    float: left;
+    width: 85vmin;
+    height: 67vmin;
+    display: grid;
   }
 
   .imagens-dobra-dois {
-    min-width: 500px;
-    min-height: 580px;
+    width: 85vmin;
+    height: 67vmin;
     overflow: hidden;
     position: relative;
   }
 
   .dobra-dois .imagens-dobra-dois .dobra-dois-imagem1 {
     position: absolute;
-    left: 55px;
     background-image: url(img/720/bg-dobra2-imagem1-min.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 266px;
-    height: 400px;
+    width: 45vmin;
+    height: 67vmin;
+    float: left;
   }
   .dobra-dois .imagens-dobra-dois .dobra-dois-imagem2 {
     position: absolute;
-    left: 340px;
-    top: 35px;
+    float: right;
+    right: 0;
+    top: 0;
     background-image: url(img/720/bg-dobra2-imagem2-min.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 200px;
-    height: 200px;
+    width: 38vmin;
+    height: 38vmin;
   }
   .dobra-dois .imagens-dobra-dois .dobra-dois-imagem3 {
     position: absolute;
-    left: 280px;
-    top: 255px;
+    right: 0;
+    bottom: 0;
     background-image: url(img/720/bg-dobra2-imagem3-min.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 288px;
-    height: 230px;
+    width: 38vmin;
+    height: 27vmin;
   }
 
   .lista-dobra-dois {
+    width: 85vmin;
+    height: 67vmin;
     margin: 60px 0 0 40px;
+    line-height: 75px;
   }
 
   .lista-dobra-dois li {
-    font-size: 34px;
+    padding-left: 1vh;
+    font-size: 56px;
+  }
+  .lista-dobra-dois ul {
+    margin-left: 4vh;
   }
   .lista-dobra-dois li span {
-    font-size: 26px;
-  }
-
-  .lista-dobra-dois li {
-    line-height: 55px;
+    font-size: 42px;
   }
 
   footer {
