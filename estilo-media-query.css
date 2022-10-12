@@ -255,6 +255,7 @@
     border: none;
     outline: none;
     height: 5vh;
+    min-height: 5vh;
     color: #fff;
     font-size: 2.2em;
     background: #e38d63;
