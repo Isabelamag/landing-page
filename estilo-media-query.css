@@ -428,8 +428,8 @@
   }
 
   div.section-card {
-    width: 600px;
-    height: 400px;
+    width: 825px;
+    height: 560px;
     position: absolute;
     left: 100px;
     top: 55px;
@@ -469,14 +469,14 @@
   }
 
   .grid-logos {
-    width: 600px;
-    height: 200px;
+    width: 825px;
+    height: 180px;
     overflow: hidden;
   }
 
   .column-grid-logos {
-    width: 120px;
-    height: 200px;
+    width: 165px;
+    height: 180px;
     float: left;
     margin: 0 auto;
     text-align: center;
@@ -517,11 +517,19 @@
   }
 
   div.section-card h1 {
-    font-size: 28px;
+    font-size: 43px;
+    letter-spacing: 5px;
   }
 
   div.section-card h2 {
-    font-size: 28px;
+    font-size: 47px;
+    letter-spacing: 6px;
+    margin: 12px 0 66px 0;
+  }
+
+  div.section-card span {
+    font-size: 26px;
+    line-height: 42px;
   }
 
   #anel-flutuante {
@@ -543,8 +551,8 @@
     background-image: url(img/720/brincos-flutuante-min.png);
     background-size: cover;
     position: absolute;
-    top: 340px;
-    left: 17px;
+    bottom: 11px;
+    left: 94px;
     background-repeat: no-repeat;
   }
 
@@ -555,7 +563,7 @@
     background-image: url(img/720/colar-flutuante-min.png);
     background-size: cover;
     position: absolute;
-    right: 727px;
+    right: 629px;
     background-repeat: no-repeat;
   }
 
@@ -625,7 +633,7 @@
 
   .div-form {
     position: absolute;
-    right: 12%;
+    right: 9%;
     top: 0px;
     background-color: rgba(0, 0, 0, 0.3);
     width: 450px;
