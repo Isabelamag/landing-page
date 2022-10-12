@@ -8,6 +8,17 @@
     display: none;
   }
 
+  .div-form input[type='text'],
+  .div-form input[type='password'],
+  .div-form-mobile input[type='text'],
+  .div-form-mobile input[type='number'],
+  .div-form-mobile input[type='email'],
+  .div-form-mobile input[type='tel'],
+  .div-form-mobile input[type='date'],
+  .div-form-mobile input[type='month'] {
+    font-weight: 300 !important;
+  }
+
   .footer-span-mobile {
     font-size: 2.2em;
     font-family: 'Montserrat', sans-serif;
@@ -225,7 +236,7 @@
   }
 
   .div-form-mobile .form-input-field {
-    min-height: 8.5vmin;
+    min-height: 10vmin;
     width: 100%;
     overflow: hidden;
   }
