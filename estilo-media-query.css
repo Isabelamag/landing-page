@@ -3,6 +3,10 @@
     -webkit-text-size-adjust: none;
   }
 
+  .div-form {
+    display: none;
+  }
+
   .dobra-um {
     width: 100%;
     min-height: 25vh;
@@ -25,7 +29,7 @@
 
   div.section-card {
     width: 85vmin;
-    height: 55vmin;
+    height: 59vmin;
     position: relative;
     background-image: url(img/1080/bg-dobra1-card1-min.png);
     background-size: cover;
@@ -114,18 +118,18 @@
   }
 
   div.section-card h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     letter-spacing: 6px;
   }
 
   div.section-card h2 {
-    font-size: 2.9em;
+    font-size: 3.5em;
     letter-spacing: 6px;
     margin: 15px 0 50px 0;
   }
 
   div.section-card span.texto-card {
-    font-size: 1.6em;
+    font-size: 2.1em;
     line-height: 1.5em;
   }
   div.section-card b {
@@ -135,7 +139,7 @@
 
   .texto-card-sub {
     margin: 15px 0 0 0;
-    font-size: 1.5em;
+    font-size: 2.1em;
     display: block;
   }
 
@@ -151,7 +155,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 54vmin;
+    top: 61vmin;
     left: 40px;
   }
 
@@ -167,7 +171,7 @@
     top: 0;
   }
 
-  .div-form {
+  .div-form-mobile {
     margin: 7vh 0 0 0;
     width: 85vmin;
     position: relative;
@@ -175,16 +179,16 @@
     padding: 2vh;
   }
 
-  .form-input-LGPD {
+  .div-form-mobile .form-input-LGPD {
     padding-bottom: 1vh;
   }
 
-  .div-form h3 {
-    font-size: 24px;
+  .div-form-mobile h3 {
+    font-size: 3.5em;
   }
 
-  .div-form input[type='text'],
-  .div-form input[type='password'] {
+  .div-form-mobile input[type='text'],
+  .div-form-mobile input[type='password'] {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -193,19 +197,19 @@
     color: #fff;
   }
 
-  .form-input-field {
+  .div-form-mobile .form-input-field {
     height: 46px;
     width: 100%;
     overflow: hidden;
   }
 
-  .div-form input,
-  .div-form select,
-  .div-form select option {
+  .div-form-mobile input,
+  .div-form-mobile select,
+  .div-form-mobile select option {
     font-size: 14px;
   }
 
-  .div-form input[type='submit'] {
+  .div-form-mobile input[type='submit'] {
     border: none;
     outline: none;
     height: 40px;
@@ -328,7 +332,8 @@
 
 /* HD */
 @media only screen and (min-device-width: 1200px) and (max-width: 1500px) {
-  .texto-card-sub {
+  .texto-card-sub,
+  .div-form-mobile {
     display: none;
   }
   .dobra-um {
@@ -709,7 +714,8 @@
 
 /* HD+ */
 @media only screen and (min-device-width: 1500px) and (max-width: 1800px) {
-  .texto-card-sub {
+  .texto-card-sub,
+  .div-form-mobile {
     display: none;
   }
   .dobra-um {
@@ -1087,7 +1093,8 @@
 
 /* FULL-HD */
 @media only screen and (min-device-width: 1920px) {
-  .texto-card-sub {
+  .texto-card-sub,
+  .div-form-mobile {
     display: none;
   }
   .dobra-um {
@@ -1476,6 +1483,10 @@
 }
 
 @media only screen and (min-device-width: 2220px) {
+  .texto-card-sub,
+  .div-form-mobile {
+    display: none;
+  }
   #anel-flutuante {
     width: 192px;
     height: 173px;
@@ -1490,7 +1501,8 @@
 }
 
 @media only screen and (min-device-width: 3000px) {
-  .texto-card-sub {
+  .texto-card-sub,
+  .div-form-mobile {
     display: none;
   }
   #anel-flutuante {
@@ -1507,7 +1519,8 @@
 }
 
 @media only screen and (min-device-width: 3800px) {
-  .texto-card-sub {
+  .texto-card-sub,
+  .div-form-mobile {
     display: none;
   }
   #anel-flutuante {
@@ -1524,7 +1537,8 @@
 }
 
 @media only screen and (min-device-width: 5000px) {
-  .texto-card-sub {
+  .texto-card-sub,
+  .div-form-mobile {
     display: none;
   }
   #anel-flutuante {
@@ -1541,7 +1555,8 @@
 }
 
 @media only screen and (min-device-width: 6000px) {
-  .texto-card-sub {
+  .texto-card-sub,
+  .div-form-mobile {
     display: none;
   }
   #anel-flutuante {

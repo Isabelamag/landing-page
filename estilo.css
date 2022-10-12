@@ -47,12 +47,14 @@ div.section-card span {
   font-family: 'Montserrat', sans-serif;
 }
 
-.div-form {
+.div-form,
+.div-form-mobile {
   background-color: rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
-.div-form h3 {
+.div-form h3,
+.div-form-mobile h3 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #fff;
@@ -61,7 +63,14 @@ div.section-card span {
 
 .div-form input[type='text'],
 .div-form input[type='button'],
-.div-form input[type='submit'] {
+.div-form input[type='submit'],
+.div-form-mobile input[type='text'],
+.div-form-mobile input[type='button'],
+.div-form-mobile input[type='submit'],
+.div-form-mobile input[type='email'],
+.div-form-mobile input[type='tel'],
+.div-form-mobile input[type='date'],
+.div-form-mobile input[type='month'] {
   width: 100%;
 }
 
@@ -92,7 +101,14 @@ div.section-card span {
 }
 
 .div-form input[type='text'],
-.div-form input[type='password'] {
+.div-form input[type='password'],
+.div-form-mobile input[type='text'],
+.div-form-mobile input[type='button'],
+.div-form-mobile input[type='submit'],
+.div-form-mobile input[type='email'],
+.div-form-mobile input[type='tel'],
+.div-form-mobile input[type='date'],
+.div-form-mobile input[type='month'] {
   border: none;
   border-bottom: 1px solid #fff;
   background: transparent;
@@ -101,7 +117,8 @@ div.section-card span {
   font-family: 'Montserrat', sans-serif;
 }
 
-.div-form input[type='submit'] {
+.div-form input[type='submit'],
+.div-form-mobile input[type='submit'] {
   border: none;
   outline: none;
   color: #fff;
@@ -323,7 +340,8 @@ select[multiple] {
   vertical-align: top;
 }
 
-.form-input-LGPD {
+.div-form .form-input-LGPD,
+.div-form-mobile .form-input-LGPD {
   display: flex;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
@@ -337,7 +355,14 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px transparent inset !important;
 }
 
-.div-form input[type='text'] {
+.div-form input[type='text'],
+.div-form-mobile input[type='text'],
+.div-form-mobile input[type='button'],
+.div-form-mobile input[type='submit'],
+.div-form-mobile input[type='email'],
+.div-form-mobile input[type='tel'],
+.div-form-mobile input[type='date'],
+.div-form-mobile input[type='month'] {
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
 }
 
