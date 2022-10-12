@@ -74,37 +74,41 @@ div.section-card span {
   width: 100%;
 }
 
-.div-form input::placeholder {
+.div-form input::placeholder,
+.div-form-mobile input::placeholder {
   color: #fff;
 }
 
-.div-form input::-webkit-input-placeholder {
+.div-form input::-webkit-input-placeholder,
+.div-form-mobile input::-webkit-input-placeholder {
   color: #fff;
 }
 
-.div-form input:-moz-placeholder {
-  color: #fff;
-  opacity: 1;
-}
-
-.div-form input::-moz-placeholder {
+.div-form input:-moz-placeholder,
+.div-form-mobile input::-moz-placeholder {
   color: #fff;
   opacity: 1;
 }
 
-.div-form input:-ms-input-placeholder {
+.div-form input::-moz-placeholder,
+.div-form-mobile input::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.div-form input:-ms-input-placeholder,
+.div-form-mobile input:-ms-input-placeholder {
   color: #fff;
 }
 
-.div-form input:-ms-input-placeholder {
+.div-form input:-ms-input-placeholder,
+.div-form-mobile input:-ms-input-placeholder {
   color: #fff;
 }
 
 .div-form input[type='text'],
 .div-form input[type='password'],
 .div-form-mobile input[type='text'],
-.div-form-mobile input[type='button'],
-.div-form-mobile input[type='submit'],
 .div-form-mobile input[type='email'],
 .div-form-mobile input[type='tel'],
 .div-form-mobile input[type='date'],
@@ -356,13 +360,7 @@ input:-webkit-autofill:active {
 }
 
 .div-form input[type='text'],
-.div-form-mobile input[type='text'],
-.div-form-mobile input[type='button'],
-.div-form-mobile input[type='submit'],
-.div-form-mobile input[type='email'],
-.div-form-mobile input[type='tel'],
-.div-form-mobile input[type='date'],
-.div-form-mobile input[type='month'] {
+.div-form-mobile input[type='text'] {
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
 }
 
