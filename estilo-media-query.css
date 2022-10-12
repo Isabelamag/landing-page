@@ -7,6 +7,24 @@
     display: none;
   }
 
+  .div-form-mobile h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #fff;
+    margin: 0 0 2vh 0;
+  }
+
+  .div-form-mobile input[type='submit'] {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #e38d63;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+
   .dobra-um {
     width: 100%;
     min-height: 25vh;
@@ -198,7 +216,7 @@
   }
 
   .div-form-mobile .form-input-field {
-    height: 46px;
+    height: 8.5vmin;
     width: 100%;
     overflow: hidden;
   }
@@ -206,15 +224,15 @@
   .div-form-mobile input,
   .div-form-mobile select,
   .div-form-mobile select option {
-    font-size: 14px;
+    font-size: 2em;
   }
 
   .div-form-mobile input[type='submit'] {
     border: none;
     outline: none;
-    height: 40px;
+    height: 5vh;
     color: #fff;
-    font-size: 16px;
+    font-size: 2.2em;
     background: #df8a1b;
     cursor: pointer;
     border-radius: 20px;
@@ -327,6 +345,22 @@
   .dobra-dois input[type='button'] {
     font-size: 18px;
     padding: 10px 34px;
+  }
+
+  .div-form-mobile .form-input-LGPD {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1.8em;
+  }
+
+  .div-form-mobile input[type='checkbox'] {
+    width: 4vh;
+  }
+
+  .div-form-mobile .select {
+    line-height: 1.1em;
+    padding: 0 !important;
   }
 }
 

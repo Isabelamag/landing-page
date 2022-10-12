@@ -53,8 +53,7 @@ div.section-card span {
   overflow: hidden;
 }
 
-.div-form h3,
-.div-form-mobile h3 {
+.div-form h3 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #fff;
@@ -65,6 +64,7 @@ div.section-card span {
 .div-form input[type='button'],
 .div-form input[type='submit'],
 .div-form-mobile input[type='text'],
+.div-form-mobile input[type='number'],
 .div-form-mobile input[type='button'],
 .div-form-mobile input[type='submit'],
 .div-form-mobile input[type='email'],
@@ -109,6 +109,7 @@ div.section-card span {
 .div-form input[type='text'],
 .div-form input[type='password'],
 .div-form-mobile input[type='text'],
+.div-form-mobile input[type='number'],
 .div-form-mobile input[type='email'],
 .div-form-mobile input[type='tel'],
 .div-form-mobile input[type='date'],
@@ -126,8 +127,7 @@ input[type='email'] {
   text-transform: uppercase;
 }
 
-.div-form input[type='submit'],
-.div-form-mobile input[type='submit'] {
+.div-form input[type='submit'] {
   border: none;
   outline: none;
   color: #fff;
@@ -349,8 +349,7 @@ select[multiple] {
   vertical-align: top;
 }
 
-.div-form .form-input-LGPD,
-.div-form-mobile .form-input-LGPD {
+.div-form .form-input-LGPD {
   display: flex;
   font-family: 'Montserrat', sans-serif;
   color: #fff;

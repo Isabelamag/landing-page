@@ -58,33 +58,41 @@ function showSnack(message, background) {
     setTimeout(function () { snack.className = snack.className.replace("show", ""); }, 3000);
 }
 
-function buscaCep() {
-    cep_val = document.getElementById("CEP").value;
-    let cep_field = cep_val.replace('-', '');
-    let url = 'https://viacep.com.br/ws/' + cep_field + '/json';
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4) {
-            if (xhr.status = 200) {
-                json = JSON.parse(xhr.responseText);
-                if(!Boolean(json.erro)) {
+function buscaCep(mobile) {
+    var concatMobile="";
+    if(mobile) {
+        concatMobile = "_MOBILE";
+    }
 
-                    if(document.getElementsByClassName('form-input-endereco').length>0) {
-                        cepField = document.getElementsByClassName('form-input-endereco')[0];
-                        cepField.classList.remove('form-input-endereco');
-                        cepField.classList.add('form-input-endereco-active');
+    cep_val = document.getElementById("CEP"+concatMobile).value;
+
+    let cep_field = cep_val.replace('-', '');
+    if(cep_field.length>=8) {
+        let url = 'https://viacep.com.br/ws/' + cep_field + '/json';
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status = 200) {
+                    json = JSON.parse(xhr.responseText);
+                    if(!Boolean(json.erro)) {
+
+                        if(document.getElementsByClassName('form-input-endereco').length>0) {
+                            cepField = document.getElementsByClassName('form-input-endereco')[0];
+                            cepField.classList.remove('form-input-endereco');
+                            cepField.classList.add('form-input-endereco-active');
+                        }
+                        document.getElementById("ENDERECO"+concatMobile).value = json.logradouro;
+                        document.getElementById("BAIRRO"+concatMobile).value = json.bairro;
+                        document.getElementById("CIDADE"+concatMobile).value = json.localidade;
+                        document.getElementById("ESTADO"+concatMobile).value = json.uf;
+                        document.getElementById("NUMERO"+concatMobile).focus();
                     }
-                    document.getElementById("ENDERECO").value = json.logradouro;
-                    document.getElementById("BAIRRO").value = json.bairro;
-                    document.getElementById("CIDADE").value = json.localidade;
-                    document.getElementById("ESTADO").value = json.uf;
-                    document.getElementById("NUMERO").focus();
                 }
             }
         }
+        xhr.send();
     }
-    xhr.send();
 }
 
 serialize = function (obj, prefix) {
@@ -137,7 +145,7 @@ function envia_dados() {
     xhr.send(serialize(params));
 }
 
-function inputHandler(masks, max, event, cep) {
+function inputHandler(masks, max, event, cep, mobile) {
     var c = event.target;
 
     if(c) {
@@ -148,8 +156,12 @@ function inputHandler(masks, max, event, cep) {
         VMasker(c).maskPattern(masks[0]);
         c.value = VMasker.toPattern(v, masks[0]);
     } else {
-        if(cep && cep.target.value.length >=8) {
-            buscaCep();
+        if(cep && !mobile && cep.target.value.length >=8) {
+            buscaCep(mobile);
+        }
+
+        if(cep && mobile && mobile.target.value.length >=8) {
+            buscaCep(mobile);
         }
     }
 }
@@ -160,16 +172,25 @@ document.addEventListener("DOMContentLoaded", function(e) {
     VMasker(tel).maskPattern(telMask[0]);
     tel.addEventListener('input', inputHandler.bind(undefined, telMask, 14), false);
 
+    var telMob = document.querySelector('#TELEFONE_MOBILE');
+    VMasker(telMob).maskPattern(telMask[0]);
+    telMob.addEventListener('input', inputHandler.bind(undefined, telMask, 14), false);
+
     var docMask = ['99.999.999/9999-99'];
     var doc = document.querySelector('#CNPJ');
     VMasker(doc).maskPattern(docMask[0]);
     doc.addEventListener('input', inputHandler.bind(undefined, docMask, 14), false);
-
+    var docMob = document.querySelector('#CNPJ_MOBILE');
+    VMasker(docMob).maskPattern(docMask[0]);
+    docMob.addEventListener('input', inputHandler.bind(undefined, docMask, 14), false);
 
     var cepMask = ['99999-999'];
     var cep = document.querySelector('#CEP');
     VMasker(cep).maskPattern(cepMask[0]);
     cep.addEventListener('input', inputHandler.bind(undefined, cepMask, 14, cep), false);
+    var cepMob = document.querySelector('#CEP_MOBILE');
+    VMasker(cepMob).maskPattern(cepMask[0]);
+    cepMob.addEventListener('input', inputHandler.bind(undefined, cepMask, 14, cepMob, true), false);
 
 });
 
