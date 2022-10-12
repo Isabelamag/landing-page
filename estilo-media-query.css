@@ -3,8 +3,18 @@
     -webkit-text-size-adjust: none;
   }
 
-  .div-form {
+  .div-form,
+  .footer-span {
     display: none;
+  }
+
+  .footer-span-mobile {
+    font-size: 2.2em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 3vh 0 0 0;
+    font-weight: 500;
   }
 
   .div-form-mobile h3 {
@@ -174,7 +184,7 @@
     background-size: cover;
     position: absolute;
     top: 61vmin;
-    left: 40px;
+    left: 3vmin;
   }
 
   #colar-flutuante {
@@ -185,7 +195,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    right: 4vh;
+    right: 3vh;
     top: 0;
   }
 
@@ -312,11 +322,12 @@
   }
 
   footer {
-    background-image: url(img/1080/footer-background-min.png);
+    background-image: none;
+    background-color: #b37964;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    height: 100px;
+    height: 25vmin;
     overflow: hidden;
     font-size: 26px;
     margin: 0 auto;
@@ -327,23 +338,25 @@
 
   footer span {
     line-height: 50px;
-    font-size: 20px;
+    font-size: 1.4em;
   }
 
   footer .logos-footer {
-    width: 200px;
-    height: 50px;
+    width: 70vmin;
+    height: 25vmin;
+    margin: 1vh 0 0 0;
+
     overflow: hidden;
   }
 
   #logo-bella-agner-footer,
   #logo-facrisa-footer {
-    width: 80px;
-    height: 41px;
+    width: 30vmin;
+    height: 20vmin;
   }
 
   .dobra-dois input[type='button'] {
-    font-size: 18px;
+    font-size: 2.2em;
     padding: 10px 34px;
   }
 
@@ -367,7 +380,8 @@
 /* HD */
 @media only screen and (min-device-width: 1200px) and (max-width: 1500px) {
   .texto-card-sub,
-  .div-form-mobile {
+  .div-form-mobile,
+  .footer-span-mobile {
     display: none;
   }
   .dobra-um {
@@ -749,7 +763,8 @@
 /* HD+ */
 @media only screen and (min-device-width: 1500px) and (max-width: 1800px) {
   .texto-card-sub,
-  .div-form-mobile {
+  .div-form-mobile,
+  .footer-span-mobile {
     display: none;
   }
   .dobra-um {
@@ -1128,7 +1143,8 @@
 /* FULL-HD */
 @media only screen and (min-device-width: 1920px) {
   .texto-card-sub,
-  .div-form-mobile {
+  .div-form-mobile,
+  .footer-span-mobile {
     display: none;
   }
   .dobra-um {
@@ -1518,7 +1534,8 @@
 
 @media only screen and (min-device-width: 2220px) {
   .texto-card-sub,
-  .div-form-mobile {
+  .div-form-mobile,
+  .footer-span-mobile {
     display: none;
   }
   #anel-flutuante {
@@ -1536,7 +1553,8 @@
 
 @media only screen and (min-device-width: 3000px) {
   .texto-card-sub,
-  .div-form-mobile {
+  .div-form-mobile,
+  .footer-span-mobile {
     display: none;
   }
   #anel-flutuante {
@@ -1554,7 +1572,8 @@
 
 @media only screen and (min-device-width: 3800px) {
   .texto-card-sub,
-  .div-form-mobile {
+  .div-form-mobile,
+  .footer-span-mobile {
     display: none;
   }
   #anel-flutuante {
@@ -1572,7 +1591,8 @@
 
 @media only screen and (min-device-width: 5000px) {
   .texto-card-sub,
-  .div-form-mobile {
+  .div-form-mobile,
+  .footer-span-mobile {
     display: none;
   }
   #anel-flutuante {
@@ -1590,7 +1610,8 @@
 
 @media only screen and (min-device-width: 6000px) {
   .texto-card-sub,
-  .div-form-mobile {
+  .div-form-mobile,
+  .footer-span-mobile {
     display: none;
   }
   #anel-flutuante {
