@@ -19,6 +19,10 @@
     font-weight: 300 !important;
   }
 
+  .dobra-dois input[type='button'] {
+    border-radius: 9px !important;
+  }
+
   .footer-span-mobile {
     font-size: 2.2em;
     font-family: 'Montserrat', sans-serif;
@@ -367,7 +371,7 @@
 
   .dobra-dois input[type='button'] {
     font-size: 2.2em;
-    padding: 10px 34px;
+    padding: 1vh 3vh;
   }
 
   .div-form-mobile .form-input-LGPD {
