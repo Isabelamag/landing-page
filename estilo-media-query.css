@@ -390,6 +390,7 @@
 
   .div-form-mobile input[type='checkbox'] {
     width: 4vh;
+    -webkit-transform: scale(2, 2);
   }
 
   .div-form-mobile .select {
