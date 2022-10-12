@@ -1,27 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  display: table;
-  margin: auto;
+  height: 100%;
 }
-
 body {
-  display: table-cell;
-  vertical-align: top;
-}
-
-body {
-  padding: 0;
-  margin: 0 auto;
+  min-height: 100%;
 }
 
 #card-texto {
   width: 100%;
   position: relative;
   float: left;
+  text-align: center;
 }
 
 div.section-card {
@@ -32,15 +32,19 @@ div.section-card h1 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: 500;
-  margin: 0;
 }
 
 div.section-card h2 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: 800;
-  letter-spacing: 3px;
-  margin: 0;
+}
+
+div.section-card span {
+  text-align: center;
+  color: #000;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .div-form {

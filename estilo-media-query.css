@@ -52,7 +52,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-image: url(img/1080/bg-dobra1-min.png);
-    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
   }
 
@@ -62,6 +62,7 @@
     left: 100px;
     top: 105px;
     background-image: url(img/1080/bg-dobra1-card1-min.png);
+    background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -126,9 +127,9 @@
     height: 64px;
     overflow: hidden;
     background-image: url(img/logos/logo-facrisa.svg);
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
@@ -138,27 +139,19 @@
     height: 78px;
     overflow: hidden;
     background-image: url(img/logos/logo-bella-agner.svg);
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
 
   div.section-card h1 {
     font-size: 28px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 500;
   }
 
   div.section-card h2 {
     font-size: 28px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 800;
-    letter-spacing: 3px;
   }
 
   #anel-flutuante {
@@ -167,10 +160,10 @@
     overflow: hidden;
     background-image: url(img/720/anel-flutuante-min.png);
     background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     bottom: 0px;
     right: 90px;
-    background-repeat: no-repeat;
   }
 
   #brincos-flutuante {
@@ -179,10 +172,10 @@
     overflow: hidden;
     background-image: url(img/720/brincos-flutuante-min.png);
     background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     top: 340px;
     left: 17px;
-    background-repeat: no-repeat;
   }
 
   #colar-flutuante {
@@ -191,9 +184,9 @@
     overflow: hidden;
     background-image: url(img/720/colar-flutuante-min.png);
     background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     right: 570px;
-    background-repeat: no-repeat;
   }
 
   div.section-info {
@@ -204,6 +197,7 @@
     left: 25px;
     bottom: 46px;
     background-image: url(img/720/bg-info-min.png);
+    background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -338,6 +332,7 @@
     left: 55px;
     background-image: url(img/720/bg-dobra2-imagem1-min.png);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 266px;
     height: 400px;
   }
@@ -347,6 +342,7 @@
     top: 35px;
     background-image: url(img/720/bg-dobra2-imagem2-min.png);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 200px;
     height: 200px;
   }
@@ -356,6 +352,7 @@
     top: 255px;
     background-image: url(img/720/bg-dobra2-imagem3-min.png);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 288px;
     height: 230px;
   }
@@ -385,7 +382,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-image: url(img/1080/bg-dobra1-min.png);
-    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
   }
 
@@ -396,6 +393,7 @@
     left: 100px;
     top: 55px;
     background-image: url(img/1080/bg-dobra1-card1-min.png);
+    background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -479,17 +477,10 @@
 
   div.section-card h1 {
     font-size: 28px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 500;
   }
 
   div.section-card h2 {
     font-size: 28px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 800;
-    letter-spacing: 3px;
   }
 
   #anel-flutuante {
@@ -497,6 +488,7 @@
     height: 90px;
     overflow: hidden;
     background-image: url(img/720/anel-flutuante-min.png);
+    background-size: cover;
     position: absolute;
     bottom: 0px;
     right: 90px;
@@ -508,6 +500,7 @@
     height: 155px;
     overflow: hidden;
     background-image: url(img/720/brincos-flutuante-min.png);
+    background-size: cover;
     position: absolute;
     top: 340px;
     left: 17px;
@@ -519,6 +512,7 @@
     height: 700px;
     overflow: hidden;
     background-image: url(img/720/colar-flutuante-min.png);
+    background-size: cover;
     position: absolute;
     right: 727px;
     background-repeat: no-repeat;
@@ -532,6 +526,7 @@
     left: 25px;
     bottom: 46px;
     background-image: url(img/720/bg-info-min.png);
+    background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -673,6 +668,7 @@
     left: 55px;
     background-image: url(img/720/bg-dobra2-imagem1-min.png);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 266px;
     height: 400px;
   }
@@ -682,6 +678,7 @@
     top: 35px;
     background-image: url(img/720/bg-dobra2-imagem2-min.png);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 200px;
     height: 200px;
   }
@@ -691,6 +688,7 @@
     top: 255px;
     background-image: url(img/720/bg-dobra2-imagem3-min.png);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 288px;
     height: 230px;
   }
@@ -714,21 +712,31 @@
 /* FULL-HD */
 @media only screen and (min-device-width: 1920px) {
   .dobra-um {
-    width: 1920px;
-    min-height: 1000px;
+    width: 100%;
+    min-height: 1020px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-image: url(img/1080/bg-dobra1-min.png);
+    background-size: cover;
     position: relative;
+    overflow: hidden;
+  }
+
+  .dobra-um-content {
+    min-width: 1900px;
+    height: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
   }
 
   div.section-card {
-    width: 733px;
-    height: 496px;
+    width: 990px;
+    height: 670px;
     position: absolute;
-    left: 250px;
-    top: 65px;
+    left: 75px;
+    top: 138px;
     background-image: url(img/1080/bg-dobra1-card1-min.png);
+    background-size: cover;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
@@ -763,14 +771,15 @@
   }
 
   .grid-logos {
-    width: 733px;
-    height: 220px;
+    width: 990px;
+    height: 180px;
     overflow: hidden;
+    justify-content: center;
   }
 
   .column-grid-logos {
-    width: 366px;
-    height: 220px;
+    width: 198px;
+    height: 180px;
     float: left;
     margin: 0 auto;
     text-align: center;
@@ -785,6 +794,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    overflow: hidden;
   }
 
   #logo-facrisa {
@@ -792,6 +802,7 @@
     height: 93px;
     overflow: hidden;
     background-image: url(img/logos/logo-facrisa.svg);
+    background-size: cover;
     position: relative;
     background-repeat: no-repeat;
     background-size: contain;
@@ -803,6 +814,7 @@
     height: 93px;
     overflow: hidden;
     background-image: url(img/logos/logo-bella-agner.svg);
+    background-size: cover;
     position: relative;
     background-repeat: no-repeat;
     background-size: contain;
@@ -810,19 +822,20 @@
   }
 
   div.section-card h1 {
-    font-size: 36px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 500;
-    padding-bottom: 25px;
+    font-size: 56px;
+    letter-spacing: 5px;
+    margin: 16px 0 0 0;
   }
 
   div.section-card h2 {
-    font-size: 36px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 800;
-    letter-spacing: 3px;
+    font-size: 56px;
+    letter-spacing: 8px;
+    margin: 16px 0 65px 0;
+  }
+
+  div.section-card span {
+    font-size: 28px;
+    line-height: 58px;
   }
 
   div.section-info {
@@ -833,6 +846,7 @@
     left: 55px;
     bottom: 36px;
     background-image: url(img/1080/bg-info-min.png);
+    background-size: cover;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
@@ -946,10 +960,7 @@
   }
 
   #anel-flutuante {
-    width: 208px;
-    height: 189px;
-    overflow: hidden;
-    background-image: url(img/1080/anel-flutuante-min.png);
+    height: 100%;
     background-repeat: no-repeat;
     position: absolute;
     bottom: 20px;
@@ -961,11 +972,11 @@
     height: 292px;
     overflow: hidden;
     background-image: url(img/1080/brincos-flutuante-min.png);
+    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 300px;
+    bottom: 27px;
     left: 57px;
-    background-repeat: no-repeat;
   }
 
   #colar-flutuante {
@@ -973,11 +984,11 @@
     height: 1060px;
     overflow: hidden;
     background-image: url(img/1080/colar-flutuante-min.png);
+    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     top: -80px;
-    right: 727px;
-    background-repeat: no-repeat;
+    right: 771px;
   }
 
   .dobra-dois {
@@ -1008,6 +1019,7 @@
     position: absolute;
     left: 55px;
     background-image: url(img/1080/bg-dobra2-imagem1-min.png);
+    background-size: cover;
     background-repeat: no-repeat;
     width: 445px;
     height: 668px;
@@ -1017,6 +1029,7 @@
     left: 530px;
     top: 45px;
     background-image: url(img/1080/bg-dobra2-imagem2-min.png);
+    background-size: cover;
     background-repeat: no-repeat;
     width: 337px;
     height: 337px;
@@ -1026,6 +1039,7 @@
     left: 450px;
     top: 415px;
     background-image: url(img/1080/bg-dobra2-imagem3-min.png);
+    background-size: cover;
     background-repeat: no-repeat;
     width: 486px;
     height: 388px;
