@@ -803,7 +803,8 @@
   }
 
   .dobra-um-content {
-    min-width: 1900px;
+    position: relative;
+    max-width: 1900px;
     height: 1000px;
     overflow: hidden;
     margin: 0 auto;
@@ -1037,14 +1038,6 @@
   }
 
   #anel-flutuante {
-    height: 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 20px;
-    right: 57px;
-  }
-
-  #anel-flutuante {
     width: 192px;
     height: 173px;
     overflow: hidden;
@@ -1181,5 +1174,75 @@
   .dobra-dois input[type='button'] {
     font-size: 23px;
     padding: 10px 46px;
+  }
+}
+
+@media only screen and (min-device-width: 2220px) {
+  #anel-flutuante {
+    width: 192px;
+    height: 173px;
+    overflow: hidden;
+    background-image: url(img/1080/anel-flutuante-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 940px;
+    right: 19%;
+  }
+}
+
+@media only screen and (min-device-width: 3000px) {
+  #anel-flutuante {
+    width: 192px;
+    height: 173px;
+    overflow: hidden;
+    background-image: url(img/1080/anel-flutuante-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 940px;
+    right: 25%;
+  }
+}
+
+@media only screen and (min-device-width: 3800px) {
+  #anel-flutuante {
+    width: 192px;
+    height: 173px;
+    overflow: hidden;
+    background-image: url(img/1080/anel-flutuante-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 940px;
+    right: 28%;
+  }
+}
+
+@media only screen and (min-device-width: 5000px) {
+  #anel-flutuante {
+    width: 192px;
+    height: 173px;
+    overflow: hidden;
+    background-image: url(img/1080/anel-flutuante-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 940px;
+    right: 35%;
+  }
+}
+
+@media only screen and (min-device-width: 6000px) {
+  #anel-flutuante {
+    width: 192px;
+    height: 173px;
+    overflow: hidden;
+    background-image: url(img/1080/anel-flutuante-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 940px;
+    right: 35%;
   }
 }
