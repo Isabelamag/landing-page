@@ -57,10 +57,11 @@
   }
 
   div.section-card {
-    height: 300px;
+    width: 660px;
+    height: 446px;
     position: absolute;
-    left: 100px;
-    top: 105px;
+    left: 60px;
+    top: 118px;
     background-image: url(img/1080/bg-dobra1-card1-min.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,13 +98,13 @@
   }
 
   .grid-logos {
-    width: 496px;
+    width: 660px;
     height: 160px;
     overflow: hidden;
   }
 
   .column-grid-logos {
-    width: 248px;
+    width: 132px;
     height: 160px;
     float: left;
     margin: 0 auto;
@@ -147,11 +148,19 @@
   }
 
   div.section-card h1 {
-    font-size: 28px;
+    font-size: 34px;
+    letter-spacing: 6px;
   }
 
   div.section-card h2 {
-    font-size: 28px;
+    font-size: 38px;
+    letter-spacing: 6px;
+    margin: 5px 0 40px 0;
+  }
+
+  div.section-card span {
+    font-size: 18px;
+    line-height: 32px;
   }
 
   #anel-flutuante {
@@ -174,8 +183,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 340px;
-    left: 17px;
+    bottom: 57px;
+    left: 40px;
   }
 
   #colar-flutuante {
@@ -186,7 +195,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    right: 570px;
+    right: 513px;
   }
 
   div.section-info {
@@ -255,7 +264,7 @@
 
   .div-form {
     position: absolute;
-    right: 12%;
+    right: 9%;
     top: 0px;
     background-color: rgba(0, 0, 0, 0.3);
     width: 400px;
