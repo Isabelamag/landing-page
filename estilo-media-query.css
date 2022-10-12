@@ -385,6 +385,33 @@
     background-size: cover;
     height: 100px;
     overflow: hidden;
+    font-size: 26px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+  }
+
+  footer span {
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  footer .logos-footer {
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  #logo-bella-agner-footer,
+  #logo-facrisa-footer {
+    width: 80px;
+    height: 41px;
+  }
+
+  .dobra-dois input[type='button'] {
+    font-size: 18px;
+    padding: 10px 34px;
   }
 }
 
@@ -727,6 +754,33 @@
     background-size: cover;
     height: 100px;
     overflow: hidden;
+    font-size: 26px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+  }
+
+  footer span {
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  footer .logos-footer {
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  #logo-bella-agner-footer,
+  #logo-facrisa-footer {
+    width: 80px;
+    height: 41px;
+  }
+
+  .dobra-dois input[type='button'] {
+    font-size: 18px;
+    padding: 10px 38px;
   }
 }
 
