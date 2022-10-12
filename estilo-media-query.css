@@ -496,7 +496,7 @@
     background-image: url(img/720/anel-flutuante-min.png);
     background-size: cover;
     position: absolute;
-    bottom: 0px;
+    top: 680px;
     right: 90px;
     background-repeat: no-repeat;
   }
@@ -965,6 +965,18 @@
     position: absolute;
     bottom: 20px;
     right: 57px;
+  }
+
+  #anel-flutuante {
+    width: 192px;
+    height: 173px;
+    overflow: hidden;
+    background-image: url(img/1080/anel-flutuante-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 940px;
+    right: 90px;
   }
 
   #brincos-flutuante {
