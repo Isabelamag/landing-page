@@ -1,50 +1,332 @@
 @media only screen and (min-device-width: 319px) and (max-device-width: 599px) {
-  .dobra-um {
-    background-color: #d1926c;
-    padding: 5%;
-    display: block;
-    align-items: center;
-    justify-content: center;
+  html {
+    -webkit-text-size-adjust: none;
   }
 
-  .section-card {
+  .dobra-um {
     width: 100%;
-    background-color: #fbeae1;
-    margin: 0 0 5% 0;
+    min-height: 25vh;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(img/mobile/bg-dobra1-min.png);
+    background-size: cover;
+    position: relative;
+  }
+
+  .dobra-um-content {
+    width: 100vmin;
+    padding: 4vh 2vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    overflow: hidden;
+  }
+
+  div.section-card {
+    width: 85vmin;
+    height: 55vmin;
+    position: relative;
+    background-image: url(img/1080/bg-dobra1-card1-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+      0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+      0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    overflow: hidden;
+  }
+
+  div.section-card:before,
+  div.section-card:after {
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+  }
+  div.section-card:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+  }
+
+  .grid-logos {
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    padding: 1vh 0 0 0;
+  }
+
+  .column-grid-logos {
+    width: 20%;
+    height: 160px;
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  #logo-facrisa {
+    width: 150px;
+    height: 64px;
+    overflow: hidden;
+    background-image: url(img/logos/logo-facrisa.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+  }
+
+  #logo-bella-agner {
+    width: 150px;
+    height: 78px;
+    overflow: hidden;
+    background-image: url(img/logos/logo-bella-agner.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+  }
+
+  div.section-card h1 {
+    font-size: 2.5em;
+    letter-spacing: 6px;
+  }
+
+  div.section-card h2 {
+    font-size: 2.9em;
+    letter-spacing: 6px;
+    margin: 15px 0 50px 0;
+  }
+
+  div.section-card span.texto-card {
+    font-size: 1.6em;
+    line-height: 1.5em;
+  }
+  div.section-card b {
+    font-size: 0.93em;
+    line-height: 1.5em;
+  }
+
+  .texto-card-sub {
+    margin: 15px 0 0 0;
+    font-size: 1.5em;
     display: block;
   }
-  .section-info {
+
+  #anel-flutuante {
     display: none;
+  }
+
+  #brincos-flutuante {
+    width: 225px;
+    height: 155px;
+    overflow: hidden;
+    background-image: url(img/720/brincos-flutuante-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 54vmin;
+    left: 40px;
+  }
+
+  #colar-flutuante {
+    width: 123px;
+    height: 700px;
+    overflow: hidden;
+    background-image: url(img/720/colar-flutuante-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 4vh;
+    top: 0;
   }
 
   .div-form {
+    margin: 7vh 0 0 0;
+    width: 85vmin;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2vh;
+  }
+
+  .form-input-LGPD {
+    padding-bottom: 1vh;
+  }
+
+  .div-form h3 {
+    font-size: 24px;
+  }
+
+  .div-form input[type='text'],
+  .div-form input[type='password'] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 25px;
+    color: #fff;
+  }
+
+  .form-input-field {
+    height: 46px;
     width: 100%;
+    overflow: hidden;
   }
 
-  #anel-flutuante,
-  #brincos-flutuante {
-    display: none;
+  .div-form input,
+  .div-form select,
+  .div-form select option {
+    font-size: 14px;
   }
 
-  #logo-facrisa,
-  #logo-bella-agner {
-    margin: 30px 0 0 0;
-    width: 48%;
-    height: 150px;
+  .div-form input[type='submit'] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #df8a1b;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 8px;
   }
 
-  #card-texto {
-    margin: 225px 0 0 0;
+  .dobra-dois {
+    margin: auto;
+    width: 90%;
   }
 
-  div.section-card h1,
-  div.section-card h2 {
-    font-size: 54px;
+  .dobra-dois h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    margin: 45px 0 35px 0;
+  }
+
+  .dobra-dois .imagens-dobra-dois {
+    width: 500px;
+    float: left;
+  }
+
+  .imagens-dobra-dois {
+    min-width: 500px;
+    min-height: 580px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .dobra-dois .imagens-dobra-dois .dobra-dois-imagem1 {
+    position: absolute;
+    left: 55px;
+    background-image: url(img/720/bg-dobra2-imagem1-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 266px;
+    height: 400px;
+  }
+  .dobra-dois .imagens-dobra-dois .dobra-dois-imagem2 {
+    position: absolute;
+    left: 340px;
+    top: 35px;
+    background-image: url(img/720/bg-dobra2-imagem2-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+  }
+  .dobra-dois .imagens-dobra-dois .dobra-dois-imagem3 {
+    position: absolute;
+    left: 280px;
+    top: 255px;
+    background-image: url(img/720/bg-dobra2-imagem3-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 288px;
+    height: 230px;
+  }
+
+  .lista-dobra-dois {
+    margin: 60px 0 0 40px;
+  }
+
+  .lista-dobra-dois li {
+    font-size: 34px;
+  }
+  .lista-dobra-dois li span {
+    font-size: 26px;
+  }
+
+  .lista-dobra-dois li {
+    line-height: 55px;
+  }
+
+  footer {
+    background-image: url(img/1080/footer-background-min.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100px;
+    overflow: hidden;
+    font-size: 26px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+  }
+
+  footer span {
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  footer .logos-footer {
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  #logo-bella-agner-footer,
+  #logo-facrisa-footer {
+    width: 80px;
+    height: 41px;
+  }
+
+  .dobra-dois input[type='button'] {
+    font-size: 18px;
+    padding: 10px 34px;
   }
 }
 
 /* HD */
 @media only screen and (min-device-width: 1200px) and (max-width: 1500px) {
+  .texto-card-sub {
+    display: none;
+  }
   .dobra-um {
     width: 100%;
     width: 100vw;
@@ -297,6 +579,13 @@
     font-size: 14px;
   }
 
+  .div-form input[type='text'],
+  .div-form input[type='button'],
+  .div-form input[type='submit'] {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   .div-form input[type='submit'] {
     border: none;
     outline: none;
@@ -416,6 +705,9 @@
 
 /* HD+ */
 @media only screen and (min-device-width: 1500px) and (max-width: 1800px) {
+  .texto-card-sub {
+    display: none;
+  }
   .dobra-um {
     width: 100%;
     width: 100vw;
@@ -791,6 +1083,9 @@
 
 /* FULL-HD */
 @media only screen and (min-device-width: 1920px) {
+  .texto-card-sub {
+    display: none;
+  }
   .dobra-um {
     width: 100%;
     min-height: 1020px;
@@ -1000,7 +1295,6 @@
   .div-form input[type='button'],
   .div-form input[type='submit'] {
     width: 100%;
-    margin-bottom: 20px;
   }
 
   .div-form input[type='text'],
@@ -1192,6 +1486,9 @@
 }
 
 @media only screen and (min-device-width: 3000px) {
+  .texto-card-sub {
+    display: none;
+  }
   #anel-flutuante {
     width: 192px;
     height: 173px;
@@ -1206,6 +1503,9 @@
 }
 
 @media only screen and (min-device-width: 3800px) {
+  .texto-card-sub {
+    display: none;
+  }
   #anel-flutuante {
     width: 192px;
     height: 173px;
@@ -1220,6 +1520,9 @@
 }
 
 @media only screen and (min-device-width: 5000px) {
+  .texto-card-sub {
+    display: none;
+  }
   #anel-flutuante {
     width: 192px;
     height: 173px;
@@ -1234,6 +1537,9 @@
 }
 
 @media only screen and (min-device-width: 6000px) {
+  .texto-card-sub {
+    display: none;
+  }
   #anel-flutuante {
     width: 192px;
     height: 173px;

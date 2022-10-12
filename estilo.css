@@ -63,7 +63,6 @@ div.section-card span {
 .div-form input[type='button'],
 .div-form input[type='submit'] {
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .div-form input::placeholder {
