@@ -121,6 +121,11 @@ div.section-card span {
   font-family: 'Montserrat', sans-serif;
 }
 
+input[type='text'],
+input[type='email'] {
+  text-transform: uppercase;
+}
+
 .div-form input[type='submit'],
 .div-form-mobile input[type='submit'] {
   border: none;

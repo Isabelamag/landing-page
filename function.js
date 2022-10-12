@@ -137,14 +137,21 @@ function envia_dados() {
     xhr.send(serialize(params));
 }
 
-function inputHandler(masks, max, event) {
+function inputHandler(masks, max, event, cep) {
     var c = event.target;
-    var v = c.value.replace(/\D/g, '');
-    var m = c.value.length > max ? 1 : 0;
-    VMasker(c).unMask();
+
+    if(c) {
+        var v = c.value.replace(/\D/g, '');
+        var m = c.value.length > max ? 1 : 0;
+        VMasker(c).unMask();
 
         VMasker(c).maskPattern(masks[0]);
         c.value = VMasker.toPattern(v, masks[0]);
+    } else {
+        if(cep && cep.target.value.length >=8) {
+            buscaCep();
+        }
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function(e) {
@@ -162,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     var cepMask = ['99999-999'];
     var cep = document.querySelector('#CEP');
     VMasker(cep).maskPattern(cepMask[0]);
-    cep.addEventListener('input', inputHandler.bind(undefined, cepMask, 14), false);
+    cep.addEventListener('input', inputHandler.bind(undefined, cepMask, 14, cep), false);
 
 });
 

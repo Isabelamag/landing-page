@@ -46,36 +46,37 @@
                     <h3>Faça seu cadastro</h3>
                     <form id="form-facrisa-mobile">
                         <div class="form-input-field">
-                            <input type="text" id="NOME" placeholder="NOME" />
+                            <input type="text" id="NOME_MOBILE" placeholder="NOME" autocapitalize="on" />
                         </div>
                         <div class="form-input-field">
-                            <input type="text" id="EMAIL" placeholder="EMAIL" />
+                            <input type="email" id="EMAIL_MOBILE" placeholder="EMAIL" />
                         </div>
                         <div class="form-input-field">
-                            <input type="text" id="TELEFONE" placeholder="TELEFONE" />
+                            <input type="tel" id="TELEFONE_MOBILE" placeholder="TELEFONE" />
                         </div>
                         <div class="form-input-field">
-                            <input type="text" id="CEP" placeholder="CEP" onfocusout="buscaCep()" onblur="buscaCep()" />
+                            <input type="text" id="CEP_MOBILE" placeholder="CEP" onfocusout="buscaCep()"
+                                onblur="buscaCep()" />
                         </div>
                         <div class="form-input-endereco">
                             <div class="form-input-field">
-                                <input type="text" id="ENDERECO" placeholder="ENDERECO" />
+                                <input type="text" id="ENDERECO_MOBILE" placeholder="ENDERECO" />
                             </div>
                             <div class="form-input-field">
-                                <input type="text" id="NUMERO" placeholder="NUMERO" />
+                                <input type="number" id="NUMERO_MOBILE" placeholder="NUMERO" />
                             </div>
                             <div class="form-input-field">
-                                <input type="text" id="COMPLEMENTO" placeholder="COMPLEMENTO" />
+                                <input type="text" id="COMPLEMENTO_MOBILE" placeholder="COMPLEMENTO" />
                             </div>
                             <div class="form-input-field">
-                                <input type="text" id="BAIRRO" placeholder="BAIRRO" />
+                                <input type="text" id="BAIRRO_MOBILE" placeholder="BAIRRO" />
                             </div>
                             <div class="form-input-field">
-                                <input type="text" id="CIDADE" placeholder="CIDADE" />
+                                <input type="text" id="CIDADE_MOBILE" placeholder="CIDADE" />
                             </div>
                             <div class="form-input-field">
                                 <div class="select">
-                                    <select id="ESTADO" name="ESTADO">
+                                    <select id="ESTADO_MOBILE" name="ESTADO">
                                         <option disabled selected value hidden>UF</option>
                                         <option value="AC">Acre</option>
                                         <option value="AL">Alagoas</option>
@@ -111,7 +112,7 @@
                             </div>
                         </div>
                         <div class="form-input-field">
-                            <input type="text" id="CNPJ" placeholder="CNPJ" />
+                            <input type="text" id="CNPJ_MOBILE" placeholder="CNPJ" />
                         </div>
                         <div class="form-input-LGPD">
                             <input class="LGPD-checkbox" type="checkbox" id="LGPD" checked disabled />
@@ -126,10 +127,12 @@
                     <h3>Faça seu cadastro</h3>
                     <form id="form-facrisa">
                         <div class="form-input-field">
-                            <input type="text" id="NOME" placeholder="NOME" />
+                            <input type="text" id="NOME" placeholder="NOME"
+                                onkeyup="this.value = this.value.toUpperCase();" />
                         </div>
                         <div class="form-input-field">
-                            <input type="text" id="EMAIL" placeholder="EMAIL" />
+                            <input type="text" id="EMAIL" placeholder="EMAIL"
+                                onkeyup="this.value = this.value.toUpperCase();" />
                         </div>
                         <div class="form-input-field">
                             <input type="text" id="TELEFONE" placeholder="TELEFONE" />
@@ -139,19 +142,23 @@
                         </div>
                         <div class="form-input-endereco">
                             <div class="form-input-field">
-                                <input type="text" id="ENDERECO" placeholder="ENDERECO" />
+                                <input type="text" id="ENDERECO" placeholder="ENDERECO"
+                                    onkeyup="this.value = this.value.toUpperCase();" />
                             </div>
                             <div class="form-input-field">
                                 <input type="text" id="NUMERO" placeholder="NUMERO" />
                             </div>
                             <div class="form-input-field">
-                                <input type="text" id="COMPLEMENTO" placeholder="COMPLEMENTO" />
+                                <input type="text" id="COMPLEMENTO" placeholder="COMPLEMENTO"
+                                    onkeyup="this.value = this.value.toUpperCase();" />
                             </div>
                             <div class="form-input-field">
-                                <input type="text" id="BAIRRO" placeholder="BAIRRO" />
+                                <input type="text" id="BAIRRO" placeholder="BAIRRO"
+                                    onkeyup="this.value = this.value.toUpperCase();" />
                             </div>
                             <div class="form-input-field">
-                                <input type="text" id="CIDADE" placeholder="CIDADE" />
+                                <input type="text" id="CIDADE" placeholder="CIDADE"
+                                    onkeyup="this.value = this.value.toUpperCase();" />
                             </div>
                             <div class="form-input-field">
                                 <div class="select">
