@@ -364,7 +364,10 @@ input:-webkit-autofill:active {
 }
 
 .div-form input[type='text'],
-.div-form-mobile input[type='text'] {
+.div-form-mobile input[type='text'],
+.div-form-mobile input[type='tel'],
+.div-form-mobile input[type='email'],
+.div-form-mobile input[type='number'] {
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
 }
 

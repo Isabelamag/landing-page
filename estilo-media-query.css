@@ -231,6 +231,8 @@
   }
 
   .div-form-mobile input[type='text'],
+  .div-form-mobile input[type='email'],
+  .div-form-mobile input[type='number'],
   .div-form-mobile input[type='password'] {
     border: none;
     border-bottom: 1px solid #fff;
