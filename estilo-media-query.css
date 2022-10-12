@@ -377,6 +377,15 @@
   .lista-dobra-dois li {
     line-height: 55px;
   }
+
+  footer {
+    background-image: url(img/1080/footer-background-min.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100px;
+    overflow: hidden;
+  }
 }
 
 /* HD+ */
@@ -710,6 +719,15 @@
   .lista-dobra-dois li {
     line-height: 55px;
   }
+
+  footer {
+    background-image: url(img/1080/footer-background-min.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100px;
+    overflow: hidden;
+  }
 }
 
 /* FULL-HD */
@@ -801,7 +819,7 @@
   }
 
   #logo-facrisa {
-    width: 215px;
+    width: 198px;
     height: 93px;
     overflow: hidden;
     background-image: url(img/logos/logo-facrisa.svg);
@@ -813,7 +831,7 @@
   }
 
   #logo-bella-agner {
-    width: 215px;
+    width: 198px;
     height: 93px;
     overflow: hidden;
     background-image: url(img/logos/logo-bella-agner.svg);
@@ -1017,19 +1035,17 @@
   .dobra-dois .imagens-dobra-dois {
     width: 500px;
     float: left;
-    margin: 25px;
   }
 
   .imagens-dobra-dois {
     min-width: 900px;
-    min-height: 830px;
+    min-height: 880px;
     overflow: hidden;
     position: relative;
   }
 
   .dobra-dois .imagens-dobra-dois .dobra-dois-imagem1 {
     position: absolute;
-    left: 55px;
     background-image: url(img/1080/bg-dobra2-imagem1-min.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1038,7 +1054,7 @@
   }
   .dobra-dois .imagens-dobra-dois .dobra-dois-imagem2 {
     position: absolute;
-    left: 530px;
+    left: 475px;
     top: 45px;
     background-image: url(img/1080/bg-dobra2-imagem2-min.png);
     background-size: cover;
@@ -1048,7 +1064,7 @@
   }
   .dobra-dois .imagens-dobra-dois .dobra-dois-imagem3 {
     position: absolute;
-    left: 450px;
+    left: 400px;
     top: 415px;
     background-image: url(img/1080/bg-dobra2-imagem3-min.png);
     background-size: cover;
@@ -1070,5 +1086,36 @@
 
   .lista-dobra-dois li {
     line-height: 75px;
+  }
+
+  footer {
+    background-image: url(img/1080/footer-background-min.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100px;
+    overflow: hidden;
+    font-size: 26px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+  }
+
+  footer span {
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  footer .logos-footer {
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  #logo-bella-agner-footer,
+  #logo-facrisa-footer {
+    width: 80px;
+    height: 41px;
   }
 }

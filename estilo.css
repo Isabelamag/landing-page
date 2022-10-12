@@ -114,24 +114,36 @@ div.section-card span {
 }
 
 #logo-facrisa {
+  float: left;
+}
+#logo-facrisa-footer {
+  float: right;
+}
+
+#logo-facrisa,
+#logo-facrisa-footer {
   overflow: hidden;
   background-image: url(img/logos/logo-facrisa.svg);
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  float: left;
 }
 
 #logo-bella-agner {
+  float: right;
+}
+#logo-bella-agner-footer {
+  float: left;
+}
+#logo-bella-agner,
+#logo-bella-agner-footer {
   overflow: hidden;
   background-image: url(img/logos/logo-bella-agner.svg);
   position: relative;
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  float: right;
 }
 
 div.section-info {
@@ -240,7 +252,22 @@ select[multiple] {
 .dobra-dois {
   position: relative;
   overflow: hidden;
+  box-shadow: inset 0 -8px 8px -8px #333;
+  padding: 0 0 20px 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
 }
+
+.dobra-dois-conteudo {
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
 .dobra-dois h1 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -249,6 +276,7 @@ select[multiple] {
 .lista-dobra-dois {
   position: relative;
   float: left;
+  text-align: left;
 }
 
 .lista-dobra-dois li {
@@ -322,4 +350,20 @@ input:-webkit-autofill:active {
 }
 input:-webkit-autofill {
   -webkit-text-fill-color: #fff !important;
+}
+
+footer {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  font-weight: 700;
+}
+
+.dobra-dois input[type='button'] {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+  padding: 10px 46px;
+  border: none;
 }
