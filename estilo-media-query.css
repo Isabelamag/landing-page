@@ -221,12 +221,11 @@
     border-bottom: 1px solid #fff;
     background: transparent;
     outline: none;
-    height: 25px;
     color: #fff;
   }
 
   .div-form-mobile .form-input-field {
-    height: 8.5vmin;
+    min-height: 8.5vmin;
     width: 100%;
     overflow: hidden;
   }
@@ -234,7 +233,7 @@
   .div-form-mobile input,
   .div-form-mobile select,
   .div-form-mobile select option {
-    font-size: 2em;
+    font-size: 2.8em;
   }
 
   .div-form-mobile input[type='submit'] {
@@ -364,7 +363,11 @@
     display: flex;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    font-size: 1.8em;
+    font-size: 2.1em;
+  }
+
+  .LGPD-checkbox {
+    margin-left: 1vh !important;
   }
 
   .div-form-mobile input[type='checkbox'] {
