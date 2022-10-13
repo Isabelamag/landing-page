@@ -23,14 +23,14 @@ function validateForm(mobile) {
         erros += 1;
     }
 
-    telefone_val = document.getElementById("NOME"+concatMobile).value;
+    telefone_val = document.getElementById("TELEFONE"+concatMobile).value;
     if (telefone_val === "") {
         message += '<br /> - Seu telefone.';
         erros += 1;
     }
 
     cnpj_val = document.getElementById("CNPJ"+concatMobile).value;
-    if(cnpj_val != "" && !validarCNPJ(cnpj_val)) {
+    if((cnpj_val === "")|| (cnpj_val != "" && !validarCNPJ(cnpj_val))) {
         message += '<br /> - CNPJ válido.';
         erros += 1;
     }
