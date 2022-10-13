@@ -107,13 +107,7 @@ div.section-card span {
 }
 
 .div-form input[type='text'],
-.div-form input[type='password'],
-.div-form-mobile input[type='text'],
-.div-form-mobile input[type='number'],
-.div-form-mobile input[type='email'],
-.div-form-mobile input[type='tel'],
-.div-form-mobile input[type='date'],
-.div-form-mobile input[type='month'] {
+.div-form input[type='password'] {
   border: none;
   border-bottom: 1px solid #fff;
   background: transparent;
@@ -228,7 +222,6 @@ select option {
   grid-template-areas: 'select';
   align-items: center;
   position: relative;
-  border-bottom: 1px solid var(--select-border);
   padding: 0.25em 0.5em 0.25em 0.1em;
   font-size: 1.25rem;
   cursor: pointer;
@@ -248,13 +241,21 @@ select option {
   clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
 
+.div-form select {
+  border-bottom: 1px solid #fff;
+  padding: 0 0 5px 0;
+}
+.div-form select:focus {
+  border-bottom: 3px dashed #fff;
+}
+
 select:focus + .focus {
   position: absolute;
   top: -1px;
   left: -1px;
   right: -1px;
   bottom: -1px;
-  border: 2px solid var(--select-focus);
+  border: none;
   border-radius: inherit;
 }
 
@@ -319,7 +320,8 @@ select[multiple] {
   font-weight: 300;
 }
 
-.form-input-endereco {
+.form-input-endereco,
+.form-input-endereco_MOBILE {
   display: none;
   transition: opacity 1s ease-out;
   opacity: 0;
@@ -335,7 +337,8 @@ select[multiple] {
   }
 }
 
-.form-input-endereco-active {
+.form-input-endereco-active,
+.form-input-endereco_MOBILE-active {
   opacity: 1;
   height: auto;
   display: block;
@@ -393,4 +396,14 @@ footer {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   border: none;
+}
+
+.div-form input[type='text']:focus,
+.div-form input[type='password']:focus,
+.div-form input[type='number']:focus,
+.div-form input[type='email']:focus,
+.div-form input[type='tel']:focus,
+.div-form input[type='date']:focus,
+.div-form input[type='month']:focus {
+  border-bottom: 3px dashed #fff;
 }

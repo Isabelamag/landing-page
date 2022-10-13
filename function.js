@@ -67,7 +67,7 @@ function buscaCep(mobile) {
     cep_val = document.getElementById("CEP"+concatMobile).value;
 
     let cep_field = cep_val.replace('-', '');
-    if(cep_field.length>=8) {
+    if(cep_field.length == 8) {
         let url = 'https://viacep.com.br/ws/' + cep_field + '/json';
         let xhr = new XMLHttpRequest();
         xhr.open('GET', url, true);
@@ -77,15 +77,19 @@ function buscaCep(mobile) {
                     json = JSON.parse(xhr.responseText);
                     if(!Boolean(json.erro)) {
 
-                        if(document.getElementsByClassName('form-input-endereco').length>0) {
-                            cepField = document.getElementsByClassName('form-input-endereco')[0];
-                            cepField.classList.remove('form-input-endereco');
-                            cepField.classList.add('form-input-endereco-active');
+                        if(document.getElementsByClassName('form-input-endereco'+concatMobile).length>0) {
+                            cepField = document.getElementsByClassName('form-input-endereco'+concatMobile)[0];
+                            cepField.classList.remove('form-input-endereco'+concatMobile);
+                            cepField.classList.add('form-input-endereco'+concatMobile+'-active');
                         }
                         document.getElementById("ENDERECO"+concatMobile).value = json.logradouro;
                         document.getElementById("BAIRRO"+concatMobile).value = json.bairro;
                         document.getElementById("CIDADE"+concatMobile).value = json.localidade;
                         document.getElementById("ESTADO"+concatMobile).value = json.uf;
+
+                        if(mobile) {
+                            document.getElementById("NOME_MOBILE").scrollIntoView({behavior: 'smooth'});
+                        }
                         document.getElementById("NUMERO"+concatMobile).focus();
                     }
                 }
@@ -145,7 +149,7 @@ function envia_dados() {
     xhr.send(serialize(params));
 }
 
-function inputHandler(masks, max, event, cep, mobile) {
+function inputHandler(masks, max, event, mobile) {
     var c = event.target;
 
     if(c) {
@@ -155,14 +159,24 @@ function inputHandler(masks, max, event, cep, mobile) {
 
         VMasker(c).maskPattern(masks[0]);
         c.value = VMasker.toPattern(v, masks[0]);
-    } else {
-        if(cep && !mobile && cep.target.value.length >=8) {
-            buscaCep(mobile);
-        }
+    }
 
-        if(cep && mobile && mobile.target.value.length >=8) {
-            buscaCep(mobile);
-        }
+    if(c.id=='CEP' || c.id == 'CEP_MOBILE') {
+        handleCep(c.id == 'CEP_MOBILE');
+    }
+}
+
+function handleCep(mobile) {
+    var concatMobile="";
+    if(mobile) {
+        concatMobile = "_MOBILE";
+    }
+    let cep_val = document.getElementById("CEP"+concatMobile).value;
+
+    let cep_field = cep_val.replace('-', '');
+
+    if(cep_field.length == 8) {
+        buscaCep(mobile);
     }
 }
 
@@ -187,10 +201,12 @@ document.addEventListener("DOMContentLoaded", function(e) {
     var cepMask = ['99999-999'];
     var cep = document.querySelector('#CEP');
     VMasker(cep).maskPattern(cepMask[0]);
-    cep.addEventListener('input', inputHandler.bind(undefined, cepMask, 14, cep), false);
+    cep.addEventListener('input', inputHandler.bind(undefined, cepMask, 8), false);
+
     var cepMob = document.querySelector('#CEP_MOBILE');
     VMasker(cepMob).maskPattern(cepMask[0]);
-    cepMob.addEventListener('input', inputHandler.bind(undefined, cepMask, 14, cepMob, true), false);
+    cepMob.addEventListener('input', inputHandler.bind(undefined, cepMask, 8), false);
+
 
 });
 

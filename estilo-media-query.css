@@ -15,7 +15,8 @@
   .div-form-mobile input[type='email'],
   .div-form-mobile input[type='tel'],
   .div-form-mobile input[type='date'],
-  .div-form-mobile input[type='month'] {
+  .div-form-mobile input[type='month'],
+  .div-form-mobile select {
     font-weight: 300 !important;
   }
 
@@ -250,7 +251,7 @@
   .div-form-mobile input,
   .div-form-mobile select,
   .div-form-mobile select option {
-    font-size: 2.8em;
+    font-size: 44px !important;
   }
 
   .div-form-mobile input[type='submit'] {
@@ -264,6 +265,61 @@
     cursor: pointer;
     border-radius: 20px;
     margin-top: 8px;
+  }
+
+  .div-form-mobile input[type='text']:focus,
+  .div-form-mobile input[type='password']:focus,
+  .div-form-mobile input[type='number']:focus,
+  .div-form-mobile input[type='email']:focus,
+  .div-form-mobile input[type='tel']:focus,
+  .div-form-mobile input[type='date']:focus,
+  .div-form-mobile input[type='month']:focus {
+    border-bottom: 0.4vh dashed #fff;
+  }
+
+  .div-form-mobile input[type='text'],
+  .div-form-mobile input[type='number'],
+  .div-form-mobile input[type='email'],
+  .div-form-mobile input[type='tel'],
+  .div-form-mobile input[type='date'],
+  .div-form-mobile input[type='month'],
+  .div-form-mobile select {
+    border: none;
+    border-bottom: 0.1vh solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 0 0.1vh 0;
+  }
+
+  .div-form-mobile select:focus {
+    border-bottom: 0.4vh dashed #fff;
+  }
+
+  .div-form-mobile .form-input-LGPD {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 2.1em;
+  }
+
+  .LGPD-checkbox {
+    margin-left: 1vh !important;
+  }
+
+  .div-form-mobile input[type='checkbox'] {
+    width: 4vh;
+    -webkit-transform: scale(2, 2);
+  }
+
+  .div-form-mobile select,
+  .div-form-mobile input {
+    height: 3.3vh;
+  }
+
+  .div-form-mobile select {
+    padding: 0;
   }
 
   .dobra-dois {
@@ -375,27 +431,6 @@
   .dobra-dois input[type='button'] {
     font-size: 2.2em;
     padding: 1vh 3vh;
-  }
-
-  .div-form-mobile .form-input-LGPD {
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    font-size: 2.1em;
-  }
-
-  .LGPD-checkbox {
-    margin-left: 1vh !important;
-  }
-
-  .div-form-mobile input[type='checkbox'] {
-    width: 4vh;
-    -webkit-transform: scale(2, 2);
-  }
-
-  .div-form-mobile .select {
-    line-height: 1.1em;
-    padding: 0 !important;
   }
 }
 
