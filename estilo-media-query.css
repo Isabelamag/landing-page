@@ -322,7 +322,13 @@
     padding: 0;
   }
 
-  input {
+  .div-form-mobile input[type='text'],
+  .div-form-mobile input[type='number'],
+  .div-form-mobile input[type='email'],
+  .div-form-mobile input[type='tel'],
+  .div-form-mobile input[type='date'],
+  .div-form-mobile input[type='month'],
+  .div-form-mobile select {
     -webkit-appearance: none;
     border-radius: 0;
   }
