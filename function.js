@@ -278,3 +278,11 @@ function validarCNPJ(cnpj) {
     return true;
 
 }
+
+function goForm(mobile) {
+    if(mobile) {
+        document.getElementById("titulo-form-mobile").scrollIntoView({behavior: 'smooth'});
+    } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+}

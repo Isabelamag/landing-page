@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="div-form-mobile">
-                    <h3>Faça seu cadastro</h3>
+                    <h3 id="titulo-form-mobile">Faça seu cadastro</h3>
                     <form id="form-facrisa-mobile">
                         <div class="form-input-field">
                             <input type="text" id="NOME_MOBILE" placeholder="NOME" autocapitalize="on" />
@@ -126,7 +126,7 @@
                     <div id="snackbar"></div>
                 </div>
                 <div class="div-form">
-                    <h3>Faça seu cadastro</h3>
+                    <h3 id="titulo-form">Faça seu cadastro</h3>
                     <form id="form-facrisa">
                         <div class="form-input-field">
                             <input type="text" id="NOME" placeholder="NOME"
@@ -236,7 +236,8 @@
                 </div>
             </div>
             <div class="dobra-dois-conteudo">
-                <input type="button" value="QUERO REVENDER" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                <input type="button" id="button-revenda_MOBILE" value="QUERO REVENDER" onclick="goForm(true);">
+                <input type="button" id="button-revenda" value="QUERO REVENDER" onclick="goForm(false);">
             </div>
 
             <div class="footer-span-mobile"><span>saiba mais</span></div>

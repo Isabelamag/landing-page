@@ -4,8 +4,13 @@
   }
 
   .div-form,
-  .footer-span {
+  .footer-span,
+  #button-revenda {
     display: none;
+  }
+
+  #button-revenda_MOBILE {
+    display: inline-block;
   }
 
   .div-form input[type='text'],
@@ -220,7 +225,7 @@
     width: 85vmin;
     position: relative;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 2vh;
+    padding: 0 2vh 2vh 2vh;
   }
 
   .div-form-mobile .form-input-LGPD {
@@ -228,6 +233,7 @@
   }
 
   .div-form-mobile h3 {
+    padding-top: 2vh;
     font-size: 3.5em;
   }
 
@@ -449,7 +455,8 @@
 @media only screen and (min-device-width: 1200px) and (max-width: 1500px) {
   .texto-card-sub,
   .div-form-mobile,
-  .footer-span-mobile {
+  .footer-span-mobile,
+  #button-revenda_MOBILE {
     display: none;
   }
   .dobra-um {
@@ -832,9 +839,11 @@
 @media only screen and (min-device-width: 1500px) and (max-width: 1800px) {
   .texto-card-sub,
   .div-form-mobile,
-  .footer-span-mobile {
+  .footer-span-mobile,
+  #button-revenda_MOBILE {
     display: none;
   }
+
   .dobra-um {
     width: 100%;
     width: 100vw;
@@ -1212,9 +1221,11 @@
 @media only screen and (min-device-width: 1920px) {
   .texto-card-sub,
   .div-form-mobile,
-  .footer-span-mobile {
+  .footer-span-mobile,
+  #button-revenda_MOBILE {
     display: none;
   }
+
   .dobra-um {
     width: 100%;
     min-height: 1020px;
@@ -1603,9 +1614,11 @@
 @media only screen and (min-device-width: 2220px) {
   .texto-card-sub,
   .div-form-mobile,
-  .footer-span-mobile {
+  .footer-span-mobile,
+  #button-revenda_MOBILE {
     display: none;
   }
+
   #anel-flutuante {
     width: 192px;
     height: 173px;
@@ -1622,9 +1635,11 @@
 @media only screen and (min-device-width: 3000px) {
   .texto-card-sub,
   .div-form-mobile,
-  .footer-span-mobile {
+  .footer-span-mobile,
+  #button-revenda_MOBILE {
     display: none;
   }
+
   #anel-flutuante {
     width: 192px;
     height: 173px;
@@ -1641,7 +1656,8 @@
 @media only screen and (min-device-width: 3800px) {
   .texto-card-sub,
   .div-form-mobile,
-  .footer-span-mobile {
+  .footer-span-mobile,
+  #button-revenda_MOBILE {
     display: none;
   }
   #anel-flutuante {
@@ -1660,9 +1676,11 @@
 @media only screen and (min-device-width: 5000px) {
   .texto-card-sub,
   .div-form-mobile,
-  .footer-span-mobile {
+  .footer-span-mobile,
+  #button-revenda_MOBILE {
     display: none;
   }
+
   #anel-flutuante {
     width: 192px;
     height: 173px;
@@ -1679,9 +1697,11 @@
 @media only screen and (min-device-width: 6000px) {
   .texto-card-sub,
   .div-form-mobile,
-  .footer-span-mobile {
+  .footer-span-mobile,
+  #button-revenda_MOBILE {
     display: none;
   }
+
   #anel-flutuante {
     width: 192px;
     height: 173px;
