@@ -356,7 +356,7 @@ select[multiple] {
   display: flex;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 input:-webkit-autofill,

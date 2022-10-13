@@ -3,31 +3,33 @@ function isEmail(email) {
     return EmailRegex.test(email);
 }
 
-document.getElementById('form-facrisa').onsubmit = function (event) {
-    event.preventDefault();
-
+function validateForm(mobile) {
+    var concatMobile="";
+    if(mobile) {
+        concatMobile = "_MOBILE";
+    }
     message = 'Por favor, informe: ';
     erros = 0;
 
-    nome_val = document.getElementById("NOME").value;
+    nome_val = document.getElementById("NOME"+concatMobile).value;
     if (nome_val === "") {
         message += '<br /> - Seu nome.';
         erros += 1;
     }
 
-    email_val = document.getElementById("EMAIL").value;
+    email_val = document.getElementById("EMAIL"+concatMobile).value;
     if (!isEmail(email_val)) {
         message += '<br /> - Seu melhor e-mail.';
         erros += 1;
     }
 
-    telefone_val = document.getElementById("NOME").value;
+    telefone_val = document.getElementById("NOME"+concatMobile).value;
     if (telefone_val === "") {
         message += '<br /> - Seu telefone.';
         erros += 1;
     }
 
-    cnpj_val = document.getElementById("CNPJ").value;
+    cnpj_val = document.getElementById("CNPJ"+concatMobile).value;
     if(cnpj_val != "" && !validarCNPJ(cnpj_val)) {
         message += '<br /> - CNPJ válido.';
         erros += 1;
@@ -37,9 +39,19 @@ document.getElementById('form-facrisa').onsubmit = function (event) {
         showSnack(message);
         return false;
     } else {
-        envia_dados();
+        envia_dados(mobile);
         return true;
     }
+}
+
+document.getElementById('form-facrisa').onsubmit = function (event) {
+    event.preventDefault();
+    validateForm(false);
+};
+
+document.getElementById('form-facrisa-mobile').onsubmit = function (event) {
+    event.preventDefault();
+    validateForm(true);
 };
 
 function showSnack(message, background) {
@@ -114,26 +126,29 @@ serialize = function (obj, prefix) {
     return str.join("&");
 }
 
-function envia_dados() {
+function envia_dados(mobile) {
 
-    debugger;
     showSnack('Enviando...', 'darkhakki');
 
     let url = 'service.php';
     let xhr = new XMLHttpRequest();
 
+    if(mobile) {
+        concatMobile = "_MOBILE";
+    }
+
     var params = new Object();
-    params.NOME = document.getElementById("NOME").value;
-    params.EMAIL = document.getElementById("EMAIL").value;
-    params.TELEFONE = document.getElementById("TELEFONE").value;
-    params.CEP = document.getElementById("CEP").value;
-    params.ENDERECO = document.getElementById("ENDERECO").value;
-    params.NUMERO = document.getElementById("NUMERO").value;
-    params.COMPLEMENTO = document.getElementById("COMPLEMENTO").value;
-    params.BAIRRO = document.getElementById("BAIRRO").value;
-    params.CIDADE = document.getElementById("CIDADE").value;
-    params.ESTADO = document.getElementById("ESTADO").value;
-    params.CNPJ = document.getElementById("CNPJ").value;
+    params.NOME = document.getElementById("NOME"+concatMobile).value;
+    params.EMAIL = document.getElementById("EMAIL"+concatMobile).value;
+    params.TELEFONE = document.getElementById("TELEFONE"+concatMobile).value;
+    params.CEP = document.getElementById("CEP"+concatMobile).value;
+    params.ENDERECO = document.getElementById("ENDERECO"+concatMobile).value;
+    params.NUMERO = document.getElementById("NUMERO"+concatMobile).value;
+    params.COMPLEMENTO = document.getElementById("COMPLEMENTO"+concatMobile).value;
+    params.BAIRRO = document.getElementById("BAIRRO"+concatMobile).value;
+    params.CIDADE = document.getElementById("CIDADE"+concatMobile).value;
+    params.ESTADO = document.getElementById("ESTADO"+concatMobile).value;
+    params.CNPJ = document.getElementById("CNPJ"+concatMobile).value;
 
 
     xhr.open("POST", url, true);
