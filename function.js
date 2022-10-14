@@ -133,6 +133,8 @@ function envia_dados(mobile) {
     let url = 'service.php';
     let xhr = new XMLHttpRequest();
 
+    var concatMobile="";
+
     if(mobile) {
         concatMobile = "_MOBILE";
     }
@@ -159,6 +161,7 @@ function envia_dados(mobile) {
     xhr.onreadystatechange = () => { // Call a function when the state changes.
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
             showSnack('Agradecemos o interesse,<br />Em breve entraremos em contato.', 'darkolivegreen');
+            cleanForm(mobile);
         }
     }
     xhr.send(serialize(params));
@@ -285,4 +288,30 @@ function goForm(mobile) {
     } else {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+}
+
+function cleanForm(mobile) {
+    var concatMobile="";
+    if(mobile) {
+        concatMobile = "_MOBILE";
+    }
+
+    document.getElementById("NOME"+concatMobile).value = "";
+    document.getElementById("EMAIL"+concatMobile).value = "";
+    document.getElementById("TELEFONE"+concatMobile).value = "";
+    document.getElementById("CEP"+concatMobile).value = "";
+    document.getElementById("ENDERECO"+concatMobile).value = "";
+    document.getElementById("NUMERO"+concatMobile).value = "";
+    document.getElementById("COMPLEMENTO"+concatMobile).value = "";
+    document.getElementById("BAIRRO"+concatMobile).value = "";
+    document.getElementById("CIDADE"+concatMobile).value = "";
+    document.getElementById("ESTADO"+concatMobile).value = "";
+    document.getElementById("CNPJ"+concatMobile).value = "";
+
+    if(document.getElementsByClassName('form-input-endereco'+concatMobile+'-active').length>0) {
+        var cepField = document.getElementsByClassName('form-input-endereco'+concatMobile+'-active')[0];
+        cepField.classList.remove('form-input-endereco'+concatMobile+'-active');
+        cepField.classList.add('form-input-endereco'+concatMobile);
+    }
+
 }
