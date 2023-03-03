@@ -54,7 +54,7 @@ document.getElementById('form-facrisa-mobile').onsubmit = function (event) {
     validateForm(true);
 };
 
-function showSnack(message, background) {
+function showSnack(message, background, time) {
     if (!background) {
         document.getElementById("snackbar").style.backgroundColor = 'firebrick';
     } else {
@@ -67,7 +67,12 @@ function showSnack(message, background) {
 
     snack.className = "show";
 
-    setTimeout(function () { snack.className = snack.className.replace("show", ""); }, 3000);
+    if(!time) {
+        time = 30000;
+    }
+    setTimeout(function () {
+        snack.className = snack.className.replace("show", "");
+    }, time);
 }
 
 function buscaCep(mobile) {
@@ -159,8 +164,9 @@ function envia_dados(mobile) {
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     xhr.onreadystatechange = () => { // Call a function when the state changes.
-        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-            showSnack('Agradecemos o interesse,<br />Em breve entraremos em contato.', 'darkolivegreen');
+        if (xhr.readyState == 4 && xhr.status == 200)
+        {
+            showSnack('Agradecemos o interesse,<br />Em breve entraremos em contato.', 'darkolivegreen', 3000);
             cleanForm(mobile);
         }
     }
